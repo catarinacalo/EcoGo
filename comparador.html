@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoGo – Comparador de Emissões de CO₂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="comparador.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="menu-header">
+    <div class="menu-conteudo">
+      <div class="menu-logo">
+        <a href="main.html"><img src="imagens/LogoFinal.svg" alt="EcoGo" class="logo-img"></a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a class="ativo" href="comparador.html">Comparador</a></li>
+          <li><a href="jogo.html">Quiz</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="co2-formbox">
+      <form id="comparador-form" autocomplete="off">
+        <div class="veic-choice">
+          <div class="veic-btn-list">
+            <button type="button" data-veic="carro" class="veic-btn ativo">
+              <img src="imagens/CarroEscuro.svg" alt="Carro" class="veic-icone">
+              <div>Carro</div>
+            </button>
+            <button type="button" data-veic="comboio" class="veic-btn">
+              <img src="imagens/ComboioClaro.svg" alt="Comboio" class="veic-icone">
+              <div>Comboio</div>
+            </button>
+            <button type="button" data-veic="autocarro" class="veic-btn">
+              <img src="imagens/AutocarroClaro.svg" alt="Autocarro" class="veic-icone">
+              <div>Autocarro</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="dist-row">
+          <label for="distancia">Distância Percorrida</label>
+          <div class="dist-slider-wrap">
+            <input type="range" min="1" max="500" value="5" id="dist-slider">
+            <input type="number" min="1" max="500" value="5" id="dist-input"> km
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="co2-container-lg">
+      <div id="co2-chartbox">
+        <canvas id="co2-chart" height="170"></canvas>
+        <div class="co2-legend-row" id="chart-legenda"></div>
+        <div class="media-info"></div>
+      </div>
+
+      <div id="co2-table-container"></div>
+    </div>
+
+    <div class="comp-tips-card">
+      <h2>O Que Fazer Para Diminuir as Emissões de CO₂?</h2>
+      <p>Descubra soluções práticas e eficazes para reduzir a sua pegada de carbono no dia-a-dia.<br>Pequenas mudanças podem fazer uma grande diferença!</p>
+      <a class="tips-link" href="solucoes.html">Ver Soluções&nbsp;&rarr;</a>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-topo">
+        <div class="rodape-logo">
+            <img src="imagens/LogoFinal.svg" alt="eco go" class="logo-img">
+            <p style="color:#4c8b6c; font-size:0.95em; margin-top:6px;">
+                Mobilidade sustentável para cidades mais saudáveis e eficientes.
+            </p>
+        </div>
+        <div class="rodape-links">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="main.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="jogo.html">Quiz</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="rodape-redes">
+            <h3>Contactos</h3>
+            <p style="margin:0; color:#4c8b6c;">Email: exemplo@ecogo.pt</p>
+            <p style="margin:4px 0 0 0; color:#4c8b6c;">Telefone: +351 900 000 000</p>
+        </div>
+    </div>
+    <div class="rodape-baixo">
+        <p>© 2025 eco go. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+  <script src="comparador.js"></script>
+</body>
+</html>

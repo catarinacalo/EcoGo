@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin-top: 90px;
+}
+
+/* HEADER MENU */
+.menu-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f6f6f6;
+  padding: 24px 0;
+  z-index: 100;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+.menu-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+.menu-logo .logo-img,
+.rodape-logo .logo-img {
+  height: 40px;
+  padding: 0;
+  /* Se quiseres dar espaço extra em baixo só ao rodapé:
+  margin-bottom: 6px;
+  */
+  display: block;
+}
+
+.menu-nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.menu-nav a {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.07em;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+  transition: color 0.18s, background 0.18s;
+  padding: 3px 12px 2px 12px;
+  border-radius: 6px 6px 0 0;
+  display: inline-block;
+}
+.menu-nav a.ativo {
+  color: #188a4a;
+  background: #e4f7ea;
+  border-bottom: 2px solid #188a4a;
+  font-weight: 700;
+}
+.menu-nav a:hover {
+  color: #188a4a;
+  background: #e4f7ea;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+/* RODAPÉ */
+.rodape {
+  background: #f6f6f6;
+  padding-top: 35px;
+  margin-top: 58px;
+  box-shadow: 0 -2px 22px #e7f7ea;
+  border-top: 2px solid #ededed;
+}
+.rodape-topo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 32px 32px 10px 32px;
+}
+.rodape-logo { min-width: 160px; }
+.rodape-logo .logo-img {
+  /* Altura igual à do header já definida acima */
+  margin-bottom: 9px;
+}
+.rodape-links {
+  flex:1;
+  min-width: 140px;
+}
+.rodape-links h3 { color: #188a4a; font-size: 1.09em; margin-bottom: 8px; margin-top:0; }
+.rodape-links ul { list-style:none; margin:0; padding:0;}
+.rodape-links li { margin-bottom: 8px; }
+.rodape-links a { color: #4c8b6c; text-decoration: none; font-weight: 500; font-size: 1em;}
+.rodape-links a:hover { text-decoration: underline; }
+.rodape-redes h3 { color: #188a4a; font-size: 1.09em; margin-bottom: 8px; }
+.redes-icons { display: flex; gap: 13px; margin-top: 8px;}
+.rodape-baixo { border-top:1px solid #e2efe5; text-align:center; color:#227542; padding: 14px 0; background: #e8f7ed; font-size:1.07em;}
+.rodape-baixo p { margin:0; }
+
+.icon-rede {
+  width: 28px;   /* muda aqui o tamanho desejado */
+  height: 28px;
+}
+
+
+/* Geral */
+hr { border: none; border-top: 1px solid #e3e3e3; margin: 32px 0; }
+a { transition: color 0.18s, background 0.18s; }
+img { max-width:100%; }
+@media (max-width:1080px){
+  .menu-conteudo, .rodape-topo {padding: 0 10px;}
+}
+
+@media (max-width:800px){
+  .menu-conteudo, .rodape-topo {flex-direction: column; align-items: center;}
+  .rodape-links, .rodape-redes {align-items:center; margin-bottom:18px;}
+}
+

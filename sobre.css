@@ -1,0 +1,288 @@
+body {
+    background:#f0fff6;
+}
+
+/* topo da página */
+.sobre-main {
+    margin-top:90px;
+}
+
+.sobre-topo {
+    text-align:center;
+    margin-bottom:24px;
+}
+
+.sobre-topo h1 {
+    font-size:2.4em;
+    color:#123524;
+    margin-bottom:6px;
+}
+
+.sobre-topo p {
+    color:#4b5e54;
+    font-size:0.98em;
+}
+
+/* container geral */
+.sobre-container {
+    max-width:1050px;
+    margin:0 auto 40px auto;
+    padding:0 16px 40px 16px;
+    box-sizing:border-box;
+}
+
+/* blocos genéricos */
+.sobre-bloco {
+    background:#ffffff;
+    border-radius:24px;
+    box-shadow:0 18px 40px rgba(15, 118, 110, 0.10);
+    padding:32px 30px;
+    margin-bottom:26px;
+}
+
+/* cabeçalho dos blocos */
+.sobre-bloco-header {
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:18px;
+}
+
+.sobre-bloco-header-inline {
+    align-items:flex-start;
+}
+
+.sobre-bloco-header h2 {
+    font-size:1.5em;
+    margin:0;
+    color:#0f172a;
+}
+
+/* texto */
+.sobre-texto {
+    margin:0 0 10px 0;
+    color:#e5fdf1;
+    font-size:0.99em;
+}
+
+.sobre-bloco-missao .sobre-texto,
+.sobre-bloco-equipa .sobre-texto,
+.sobre-bloco-equipa .sobre-texto-pequeno,
+.sobre-bloco-desenvolvemos p,
+.sobre-bloco-valores p {
+    color:#475569;
+}
+
+.sobre-texto-pequeno {
+    margin-top:2px;
+    font-size:0.95em;
+}
+
+/* círculo de ícone */
+.sobre-icone-circulo {
+    width:52px;
+    height:52px;
+    border-radius:999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.6em;
+}
+
+/* cores específicas de ícones */
+.sobre-icone-projeto {
+    background:#ffffff;
+}
+
+.sobre-icone-missao {
+    background:#e4f8e9;
+}
+
+.sobre-icone-equipa {
+    background:#e0f2ff;
+}
+
+/* bloco projeto verde */
+.sobre-bloco-projeto {
+    background:linear-gradient(135deg,#059669,#047857);
+    color:#ecfdf5;
+}
+
+/* títulos de secções menores */
+.sobre-section-label {
+    font-size:1em;
+    font-weight:600;
+    color:#6b7280;
+    margin:0 0 18px 4px;
+}
+
+/* O Que Desenvolvemos */
+.sobre-bloco-desenvolvemos p {
+    font-size:0.95em;
+}
+
+.sobre-desenvolvemos-grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:26px 40px;
+}
+
+.sobre-dev-item h4 {
+    margin:0 0 6px 0;
+    font-size:1.1em;
+    color:#0f172a;
+}
+
+.sobre-dev-item p {
+    margin:0;
+}
+
+/* ícones coloridos */
+.sobre-icone-azul      { background:#e0edff; }
+.sobre-icone-verde     { background:#e3ffe8; }
+.sobre-icone-amarelo   { background:#fff5d5; }
+.sobre-icone-rosa      { background:#ffe8fa; }
+
+.sobre-icone-verde-claro { background:#e3ffe8; }
+.sobre-icone-azul-claro  { background:#e0edff; }
+.sobre-icone-rosa-claro  { background:#ffe8fa; }
+
+/* Equipa */
+.sobre-equipa-grid {
+    display:grid;
+    gap:26px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    margin-top:24px;
+}
+
+.sobre-equipa-card {
+    text-align:center;
+}
+
+.avatar {
+    width:96px;
+    height:96px;
+    border-radius:999px;
+    margin:0 auto 10px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ffffff;
+    font-size:2em;
+    font-weight:600;
+}
+
+.avatar-verde { background:radial-gradient(circle at 30% 20%,#6ee7b7,#10b981); }
+.avatar-azul  { background:radial-gradient(circle at 30% 20%,#93c5fd,#2563eb); }
+.avatar-roxo  { background:radial-gradient(circle at 30% 20%,#c4b5fd,#7c3aed); }
+
+.nome {
+    font-weight:600;
+    color:#111827;
+    margin-bottom:2px;
+}
+
+.cargo {
+    font-size:0.92em;
+    color:#6b7280;
+}
+
+/* Valores */
+.sobre-valores-grid {
+    display:grid;
+    gap:22px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    margin-top:6px;
+}
+
+.sobre-valor-card {
+    background:#f9fafb;
+    border-radius:20px;
+    padding:22px 18px 20px 18px;
+    text-align:center;
+    box-shadow:0 8px 24px rgba(148, 163, 184, 0.25);
+}
+
+.sobre-valor-card h3 {
+    margin:10px 0 6px 0;
+    font-size:1.05em;
+    color:#0f172a;
+}
+
+.sobre-valor-card p {
+    margin:0;
+    font-size:0.92em;
+}
+
+/* CTA final */
+.sobre-cta {
+    margin-top:10px;
+    background:#e5f0ff;
+    border-radius:22px;
+    padding:26px 18px 30px 18px;
+    text-align:center;
+}
+
+.sobre-cta h2 {
+    margin:0 0 8px 0;
+    color:#0f172a;
+    font-size:1.3em;
+}
+
+.sobre-cta p {
+    margin:0 0 18px 0;
+    color:#4b5563;
+    font-size:0.96em;
+}
+
+.sobre-cta-botoes {
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.sobre-cta-botoes a {
+    display:inline-block;
+    padding:11px 26px;
+    border-radius:999px;
+    font-weight:600;
+    text-decoration:none;
+    color:#ffffff;
+    font-size:0.96em;
+}
+
+.btn-verde {
+    background:#16a34a;
+}
+
+.btn-azul {
+    background:#2563eb;
+}
+
+/* Responsivo */
+@media (max-width:900px){
+    .sobre-bloco {
+        padding:24px 18px;
+    }
+
+    .sobre-desenvolvemos-grid,
+    .sobre-equipa-grid,
+    .sobre-valores-grid {
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:600px){
+    .sobre-main {
+        margin-top:80px;
+    }
+
+    .sobre-topo h1 {
+        font-size:2em;
+    }
+
+    .sobre-container {
+        padding:0 10px 30px 10px;
+    }
+}

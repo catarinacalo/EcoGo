@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - eco go</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+<header class="menu-header">
+    <div class="menu-conteudo">
+      <div class="menu-logo">
+        <a href="main.html">
+          <img src="imagens/LogoFinal.svg" alt="EcoGo" class="logo-img">
+        </a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="comparador.html">Comparador</a></li>
+          <li><a href="jogo.html">Quiz</a></li>
+          <li><a class="ativo"  href="contacto.html">Contacto</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main class="contact-main">
+    <!-- Título principal -->
+    <section class="contact-topo">
+        <h1>Entre em Contacto</h1>
+        <p>Tem dúvidas ou sugestões?</p>
+    </section>
+
+    <!-- Cartão do formulário -->
+    <section class="contact-wrapper">
+        <div class="contact-card">
+            <h2 class="contact-card-title">Envie-nos uma Mensagem</h2>
+
+            <form id="contactForm" novalidate>
+                <div class="contact-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="O seu nome">
+                    <div class="contact-error" id="erro-nome">Por favor, introduza o seu nome.</div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu.email@exemplo.com">
+                    <div class="contact-error" id="erro-email">Por favor, introduza um email válido.</div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto">
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida sobre o comparador</option>
+                        <option value="sugestao">Sugestão de melhoria</option>
+                        <option value="erro">Reportar um erro</option>
+                        <option value="outro">Outro assunto</option>
+                    </select>
+                    <div class="contact-error" id="erro-assunto">Por favor, indique o assunto da mensagem.</div>
+                </div>
+
+                <div class="contact-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Escreva a sua mensagem aqui..."></textarea>
+                    <div class="contact-error" id="erro-mensagem">A mensagem deve ter pelo menos 10 caracteres.</div>
+                </div>
+
+                <button type="submit" class="contact-submit"> Enviar Mensagem
+                </button>
+                <div class="contact-success" id="contact-success">
+                    Mensagem enviada com sucesso! Obrigado pelo seu contacto.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-wrapper">
+        <div class="faq-card">
+            <div class="faq-header">
+                <div class="faq-icon">❓</div>
+                <div>
+                    <h2>Perguntas Frequentes</h2>
+                </div>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Como posso comparar as emissões de diferentes veículos?</summary>
+                    <p>Utilize o comparador de emissões na página de soluções para introduzir a distância e o tipo de veículo.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Os dados de emissões apresentados são precisos?</summary>
+                    <p>Os valores são aproximações médias baseadas em fontes de referência sobre mobilidade sustentável.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como posso contribuir para a mobilidade sustentável no meu dia-a-dia?</summary>
+                    <p>Prefira caminhar, usar bicicleta ou transporte público sempre que possível e partilhe viagens de carro.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Qual é o transporte mais sustentável?</summary>
+                    <p>Opções ativas como caminhar ou andar de bicicleta possuem emissões diretas nulas.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como funciona o Quiz sobre mobilidade sustentável?</summary>
+                    <p>Na página do quiz pode responder a perguntas interativas e ver a sua pontuação no final.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="rodape">
+    <div class="rodape-topo">
+        <div class="rodape-logo">
+            <img src="imagens/LogoFinal.svg" alt="eco go" class="logo-img">
+            <p style="color:#4c8b6c; font-size:0.95em; margin-top:6px;">
+                Mobilidade sustentável para cidades mais saudáveis e eficientes.
+            </p>
+        </div>
+        <div class="rodape-links">
+            <h3>links</h3>
+            <ul>
+                <li><a href="main.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="jogo.html">Quiz</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+       <div class="rodape-redes">
+            <h3>Contactos</h3>
+            <p style="margin:0; color:#4c8b6c;">Email: ecogo1809@gmail.com</p>
+            <p style="margin:4px 0 0 0; color:#4c8b6c;">Telefone: +351 900 000 000</p>
+        </div>
+    </div>
+    <div class="rodape-baixo">
+        <p>© 2025 eco go. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="contacto.js"></script>
+</body>
+</html>

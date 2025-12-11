@@ -1,0 +1,364 @@
+body {
+  background:#f0fff6;
+}
+
+/* Hero verde */
+.solutions-main {
+  margin-top:90px;
+}
+
+.solutions-hero {
+  background:linear-gradient(135deg,#16a34a,#047857);
+  color:#ffffff;
+  padding:60px 16px 40px 16px;
+  text-align:center;
+}
+
+.solutions-hero h1 {
+  font-size:2.4em;
+  margin:0 0 6px 0;
+}
+
+.solutions-intro {
+  margin:0 0 26px 0;
+  font-size:1.02em;
+  color:#dcfce7;
+}
+
+/* Cartão calculadora */
+.solutions-calculator {
+  max-width:1040px;
+  margin:0 auto;
+  background:#059669;
+  border-radius:28px;
+  padding:26px 22px 26px 22px;
+  box-shadow:0 22px 50px rgba(4,120,87,0.4);
+}
+
+.solutions-calc-grid {
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.solutions-input-group {
+  flex:1;
+  min-width:230px;
+  text-align:left;
+}
+
+.solutions-input-group label {
+  display:block;
+  margin-bottom:6px;
+  font-weight:600;
+  font-size:0.96em;
+}
+
+.solutions-input-group input,
+.solutions-input-group select {
+  width:100%;
+  padding:11px 13px;
+  border-radius:12px;
+  border:none;
+  font-size:0.96em;
+  box-sizing:border-box;
+  background:#ecfdf5;
+  color:#064e3b;
+}
+
+/* Resultados */
+.solutions-results {
+  margin-top:6px;
+}
+
+.solutions-result-card {
+  background:#ecfdf5;
+  border-radius:20px;
+  padding:18px 18px 16px 18px;
+}
+
+.solutions-result-label {
+  margin:0 0 10px 0;
+  font-weight:600;
+  color:#064e3b;
+  font-size:0.96em;
+}
+
+.solutions-result-row {
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+.solutions-result-box {
+  flex:1;
+  min-width:210px;
+  background:#ffffff;
+  border-radius:16px;
+  padding:16px 14px 14px 14px;
+  text-align:center;
+}
+
+.solutions-result-title {
+  display:block;
+  margin-bottom:4px;
+  font-size:0.93em;
+  color:#6b7280;
+}
+
+.solutions-result-value {
+  display:block;
+  font-size:1.4em;
+  font-weight:700;
+  color:#166534;
+}
+
+.solutions-result-sub {
+  display:block;
+  margin-top:2px;
+  font-size:0.83em;
+  color:#6b7280;
+}
+
+/* Secções comuns */
+.solutions-section {
+  padding:40px 0;
+}
+
+.solutions-container {
+  max-width:1080px;
+  margin:0 auto;
+  padding:0 16px;
+  box-sizing:border-box;
+}
+
+.solutions-section-title {
+  font-size:1.8em;
+  color:#111827;
+  margin:0 0 8px 0;
+}
+
+.solutions-section-sub {
+  margin:0 0 22px 0;
+  color:#4b5563;
+  font-size:0.97em;
+}
+
+/* Grid de soluções */
+.solutions-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+
+.solution-card {
+  border-radius:22px;
+  padding:20px 18px 18px 18px;
+  background:#ffffff;
+  box-shadow:0 12px 32px rgba(15,118,110,0.12);
+}
+
+.solution-card-header {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:8px;
+}
+
+.solution-card-header h3 {
+  margin:0;
+  font-size:1.12em;
+  color:#0f172a;
+}
+
+.solution-icon {
+  width:40px;
+  height:40px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.4em;
+}
+
+.green-circle { background:#dcfce7; }
+.blue-circle  { background:#e0f2fe; }
+.purple-circle{ background:#ede9fe; }
+.orange-circle{ background:#ffedd5; }
+
+.solution-card-text {
+  margin:0 0 10px 0;
+  color:#4b5563;
+  font-size:0.94em;
+}
+
+.solution-big-number {
+  font-size:2.2em;
+  font-weight:700;
+  margin:0;
+  color:#16a34a;
+}
+
+.solution-card-sub {
+  margin:4px 0 0 0;
+  font-size:0.9em;
+  color:#4b5563;
+}
+
+.solution-card-mini {
+  margin:4px 0 0 0;
+  font-size:0.86em;
+  color:#6b7280;
+}
+
+/* cores texto */
+.blue-text { color:#2563eb; }
+.purple-text { color:#7c3aed; }
+.orange-text { color:#ea580c; }
+
+/* Poupança */
+.solutions-savings-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  margin-top:10px;
+}
+
+.solutions-saving-card {
+  background:#f9fafb;
+  border-radius:20px;
+  padding:20px 18px;
+  text-align:center;
+  box-shadow:0 10px 28px rgba(148,163,184,0.25);
+}
+
+.solutions-saving-label {
+  margin:0 0 6px 0;
+  font-size:0.9em;
+  color:#6b7280;
+}
+
+.solutions-saving-value {
+  margin:0;
+  font-size:1.6em;
+  font-weight:700;
+  color:#16a34a;
+}
+
+/* Dicas */
+.solutions-tips {
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin-top:10px;
+}
+
+.solutions-tip-card {
+  background:#ffffff;
+  border-radius:18px;
+  display:flex;
+  box-shadow:0 10px 28px rgba(148,163,184,0.22);
+}
+
+.solutions-tip-bar {
+  width:6px;
+  border-radius:18px 0 0 18px;
+}
+
+.tip-green  .solutions-tip-bar { background:#16a34a; }
+.tip-blue   .solutions-tip-bar { background:#2563eb; }
+.tip-orange .solutions-tip-bar { background:#f97316; }
+.tip-yellow .solutions-tip-bar { background:#eab308; }
+
+.solutions-tip-content {
+  padding:14px 16px 14px 16px;
+}
+
+.solutions-tip-content h3 {
+  margin:0 0 4px 0;
+  font-size:1.05em;
+  color:#111827;
+}
+
+.solutions-tip-content p {
+  margin:0;
+  font-size:0.93em;
+  color:#4b5563;
+}
+
+/* CTA final */
+.solutions-cta {
+  padding:30px 16px 46px 16px;
+}
+
+.solutions-cta-inner {
+  max-width:1080px;
+  margin:0 auto;
+  background:linear-gradient(135deg,#16a34a,#047857);
+  border-radius:24px;
+  padding:26px 18px 26px 18px;
+  text-align:center;
+  color:#ffffff;
+}
+
+.solutions-cta-inner h2 {
+  margin:0 0 6px 0;
+  font-size:1.5em;
+}
+
+.solutions-cta-inner p {
+  margin:0 0 16px 0;
+  font-size:0.96em;
+}
+
+.solutions-cta-buttons {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.solutions-cta-buttons a {
+  display:inline-block;
+  padding:11px 26px;
+  border-radius:999px;
+  font-weight:600;
+  text-decoration:none;
+  font-size:0.96em;
+}
+
+.btn-white {
+  background:#ffffff;
+  color:#047857;
+}
+
+.btn-dark {
+  background:#064e3b;
+  color:#ffffff;
+}
+
+/* Responsivo */
+@media (max-width:900px){
+  .solutions-calculator {
+    padding:22px 16px;
+  }
+
+  .solutions-grid {
+    grid-template-columns:1fr;
+  }
+
+  .solutions-savings-grid {
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:600px){
+  .solutions-main {
+    margin-top:80px;
+  }
+
+  .solutions-hero h1 {
+    font-size:2em;
+  }
+}
