@@ -90,12 +90,6 @@ html, body {
   padding: 32px 32px 10px 32px;
 }
 
-.rodape-links h3,
-.rodape-redes h3 {
-  margin-top: 0;      /* já tens no h3 dos links, garante igual nas redes */
-}
-
-
 .rodape-logo { min-width: 160px; }
 .rodape-logo .logo-img {
   /* Altura igual à do header já definida acima */
@@ -114,6 +108,12 @@ html, body {
   display: inline-block;   /* faz o bloco de links ficar mesmo ao centro */
 }
 
+.rodape-links h3,
+.rodape-redes h3 {
+  margin-top: 0;      /* já tens no h3 dos links, garante igual nas redes */
+}
+
+
 .rodape-links h3 { color: #188a4a; font-size: 1.09em; margin-bottom: 8px; margin-top:0; }
 .rodape-links ul { list-style:none; margin:0; padding:0;}
 .rodape-links li { margin-bottom: 8px; }
@@ -127,6 +127,10 @@ html, body {
 .icon-rede {
   width: 28px;   /* muda aqui o tamanho desejado */
   height: 28px;
+}
+.icon-twitter {
+  transform: scale(1.7);   /* aumenta ~20%, ajusta até ficar igual */
+  transform-origin: center;
 }
 
 
