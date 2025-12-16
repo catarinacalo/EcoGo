@@ -1,16 +1,18 @@
-.hero-eco {background: linear-gradient(90deg,#18af57 0%,#079645 100%); color:#fff; text-align:center; padding:100px 0 70px 0; }
+.hero-eco {background: linear-gradient(90deg,#18af57 0%,#079645 100%); color:#fff; text-align:center; padding:100px 0 70px 0;}
 .hero-center {max-width:700px; margin:0 auto;}
 .hero-logo {width:85px; margin-bottom:25px;}
 .hero-eco h1 {font-size:2.8em; font-weight:700; margin-bottom:12px;}
 .hero-eco p {font-size:1.22em; margin-bottom:32px; color:#caffe1;}
 .hero-btn {background:#fff; color:#189e5b; padding:16px 40px; font-size:1.15em; border-radius:28px; text-decoration:none; font-weight:700; transition:.18s;}
 .hero-btn:hover {background:#d7ffec;}
+
 .mob-sus {background:#f6fff7; padding:60px 0;}
 .mob-sus-content {display:flex;gap:50px;max-width:1100px;margin:0 auto;align-items:center;}
 .mob-sus-content > div {flex:1;}
 .mob-sus h2 {font-size:2em;color:#188a4a;margin-bottom:13px;}
 .mob-sus p {font-size:1.14em;}
 .mob-img {border-radius:20px;max-width:440px;width:100%;}
+
 .eco-beneficios {background:#fff; padding:55px 0;}
 .eco-beneficios h2 {text-align:center; color:#158a5a; margin-bottom:38px;font-size:2em;}
 .eco-beneficios-grid {display:flex; gap:36px; max-width:1050px; margin:0 auto;}
@@ -18,6 +20,7 @@
 .eco-beneficio-icon {font-size:2.7em;margin-bottom:18px;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto;}
 .eco-beneficio-card h3 {font-size:1.2em;margin-bottom:10px;}
 .eco-beneficio-card p {font-size:1.07em;color:#49744b;}
+
 .eco-transp {background:#fafdff; padding:58px 0;}
 .eco-transp h2 {text-align:center; color:#158a5a; font-size:2em; margin-bottom:36px;}
 .eco-transp-grid {display:flex; gap:36px; max-width:990px; margin:0 auto 32px auto;}
@@ -26,20 +29,19 @@
 .eco-transp-card h3 {font-size:1.15em;margin-bottom:9px;}
 .eco-imgs-row {display:flex;gap:24px;justify-content:center;margin-top:30px;}
 .eco-imgs-row img {border-radius:16px;max-width:320px;width:100%;}
+
 .eco-cta {background:linear-gradient(90deg,#18af57 0%,#079645 100%);color:#fff;text-align:center;padding:80px 0;}
 .eco-cta h2 {font-size:2em;font-weight:700;margin-bottom:13px;}
 .eco-cta-btn {margin-top:22px;display:inline-block;background:white;color:#28be62;padding:17px 50px;border-radius:22px;font-weight:700;font-size:1.22em;text-decoration:none;transition:.19s;}
 .eco-cta-btn:hover {background:#d7ffec;}
+
 /* Cards grandes “Ver mais / Ver menos” */
-
-/* Cards de tópicos – grelha quadrada */
-
 .eco-topic-destaque {
   max-width:1200px;
   margin:40px auto 70px auto;
   padding:0 16px;
   display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr)); /* 3 por linha em desktop */
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:24px;
 }
 
@@ -57,7 +59,7 @@
 .eco-topic-banner.quadrado {
   position:relative;
   width:100%;
-  padding-top:100%;        /* altura = largura */
+  padding-top:100%;
   overflow:hidden;
 }
 
@@ -86,8 +88,8 @@
   box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
-.pill-green  { background:#16a34a; }
-.pill-blue   { background:#2563eb; }
+.pill-green { background:#16a34a; }
+.pill-blue { background:#2563eb; }
 .pill-purple { background:#7c3aed; }
 .pill-orange { background:#f97316; }
 .pill-indigo { background:#4f46e5; }
@@ -95,8 +97,14 @@
 /* texto curto do card */
 .eco-topic-main {
   padding:16px 18px 12px 18px;
-  background:#eef5ff;
+  background:#ffffff;
   flex:0 0 auto;
+  min-height:110px;
+  box-sizing:border-box;
+}
+
+.eco-topic-main-manual {
+  background:#eef5ff;
 }
 
 .eco-topic-main h3 {
@@ -139,26 +147,14 @@
   display:none;
 }
 
-.eco-topic-extra p {
-  margin:0 0 10px 0;
-}
-
-.eco-topic-extra p:last-child {
-  margin-bottom:0;
-}
+.eco-topic-extra p { margin:0 0 10px 0; }
+.eco-topic-extra p:last-child { margin-bottom:0; }
 
 /* estado aberto */
-.eco-topic-expandido.ativo .eco-topic-extra {
-  display:block;
-}
-
-.eco-topic-expandido.ativo .eco-topic-toggle span {
-  transform:rotate(180deg);
-}
-/* Grelha de cards "AI" */
+.eco-topic-expandido.ativo .eco-topic-extra { display:block; }
+.eco-topic-expandido.ativo .eco-topic-toggle span { transform:rotate(180deg); }
 
 /* Grelha de cards "AI" */
-
 .ai-topics-section {
   max-width:1200px;
   margin:50px auto 80px auto;
@@ -207,9 +203,7 @@
   width:max-content;
 }
 
-.ai-topic-tag span {
-  font-size:1rem;
-}
+.ai-topic-tag span { font-size:1rem; }
 
 .ai-topic-title {
   font-size:1rem;
@@ -269,49 +263,19 @@
 
 /* responsivo */
 @media (max-width:1000px){
-  .ai-topics-grid {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
+  .mob-sus-content,
+  .eco-beneficios-grid,
+  .eco-transp-grid {flex-direction:column;gap:18px;}
+  .eco-imgs-row {flex-direction:column;gap:14px;}
+  .eco-topic-destaque,
+  .ai-topics-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
 }
-
-@media (max-width:650px){
-  .ai-topics-grid {
-    grid-template-columns:1fr;
-  }
-}
-
-/* responsivo */
-@media (max-width:1000px){
-  .ai-topics-grid {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-}
-
-@media (max-width:650px){
-  .ai-topics-grid {
-    grid-template-columns:1fr;
-  }
-}
-
-/* responsivo: 2 colunas e depois 1 */
-@media (max-width:1000px){
-  .eco-topic-destaque {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-}
-
-@media (max-width:650px){
-  .eco-topic-destaque {
-    grid-template-columns:1fr;
-  }
-}
-
-/* responsivo */
 
 @media (max-width:800px){
-  .eco-topic-banner img {
-    height:180px;
-  }
+  .eco-topic-banner img {height:180px;}
 }
 
-@media(max-width:950px){.mob-sus-content, .eco-beneficios-grid, .eco-transp-grid{flex-direction:column;gap:18px;}.eco-imgs-row{flex-direction:column;gap:14px;}}
+@media (max-width:650px){
+  .eco-topic-destaque,
+  .ai-topics-grid {grid-template-columns:1fr;}
+}

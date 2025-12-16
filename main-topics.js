@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.addEventListener("click", () => {
       const isActive = card.classList.toggle("ativo");
-      // atualiza texto do botão
       btn.firstChild.textContent = isActive ? "Ver menos " : "Ver mais ";
     });
   });
