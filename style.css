@@ -95,9 +95,18 @@ html, body {
   margin-bottom: 9px;
 }
 .rodape-links {
-  flex:1;
+  flex: 1;
   min-width: 140px;
+  text-align: center;      /* centra o título e o ul */
 }
+
+.rodape-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;   /* faz o bloco de links ficar mesmo ao centro */
+}
+
 .rodape-links h3 { color: #188a4a; font-size: 1.09em; margin-bottom: 8px; margin-top:0; }
 .rodape-links ul { list-style:none; margin:0; padding:0;}
 .rodape-links li { margin-bottom: 8px; }
