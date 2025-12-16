@@ -82,13 +82,20 @@ html, body {
 }
 .rodape-topo {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start;   /* alinha as 3 colunas pelo topo */
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   gap: 30px;
   padding: 32px 32px 10px 32px;
 }
+
+.rodape-links h3,
+.rodape-redes h3 {
+  margin-top: 0;      /* já tens no h3 dos links, garante igual nas redes */
+}
+
+
 .rodape-logo { min-width: 160px; }
 .rodape-logo .logo-img {
   /* Altura igual à do header já definida acima */

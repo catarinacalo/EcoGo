@@ -157,6 +157,8 @@
 }
 /* Grelha de cards "AI" */
 
+/* Grelha de cards "AI" */
+
 .ai-topics-section {
   max-width:1200px;
   margin:50px auto 80px auto;
@@ -263,6 +265,19 @@
   background:#15803d;
   transform:translateY(-1px);
   box-shadow:0 14px 30px rgba(22,163,74,0.4);
+}
+
+/* responsivo */
+@media (max-width:1000px){
+  .ai-topics-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
+@media (max-width:650px){
+  .ai-topics-grid {
+    grid-template-columns:1fr;
+  }
 }
 
 /* responsivo */

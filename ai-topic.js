@@ -1,4 +1,4 @@
-// "Gerador" simples de cards de mobilidade sustentável
+// Geração de cards "automáticos"
 
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("ai-topics-grid");
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { label: "Cidades Inteligentes", icon: "🏙️" },
     { label: "Carro Elétrico", icon: "⚡" },
     { label: "Partilha", icon: "🤝" },
-    { label: "Planeamento", icon: "🧭" },
+    { label: "Planeamento", icon: "🧭" }
   ];
 
   const titulos = [
@@ -27,22 +27,22 @@ document.addEventListener("DOMContentLoaded", () => {
     "Usar dados de tráfego para otimizar semáforos",
     "Tarifas integradas entre autocarro e comboio",
     "Instalar parkings seguros para bicicletas",
-    "Promover teletrabalho alguns dias por semana",
+    "Promover teletrabalho alguns dias por semana"
   ];
 
   const descricoes = [
     "Reduz emissões, melhora a saúde e diminui o congestionamento urbano.",
     "Aumenta a velocidade média do transporte público e torna-o mais competitivo.",
-    "Limita veículos mais poluentes em zonas sensíveis, melhorando a qualidade do ar.",
-    "Diminui o tráfego dentro da cidade e mantém a acessibilidade ao centro.",
+    "Limita veículos poluentes em zonas sensíveis e melhora a qualidade do ar.",
+    "Diminui o tráfego dentro da cidade, mantendo acesso fácil ao centro.",
     "Facilita a combinação bicicleta + comboio em viagens diárias.",
     "Reduz custos operacionais e emissões na prestação de serviços públicos.",
     "Diminui o número de carros na estrada e reparte custos de deslocação.",
     "Cria espaços mais seguros e agradáveis para caminhar e conviver.",
     "Evita paragens desnecessárias e reduz o consumo de combustível.",
-    "Torna a mudança de linha ou modo de transporte mais simples para o utilizador.",
+    "Torna a mudança de linha ou modo de transporte mais simples.",
     "Dá confiança às pessoas para deixarem a bicicleta na estação.",
-    "Evita deslocações desnecessárias e picos de tráfego nas horas de ponta.",
+    "Evita deslocações desnecessárias e picos de tráfego nas horas de ponta."
   ];
 
   const impactos = [
@@ -50,13 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
     "Impacto moderado",
     "Mudança estrutural",
     "Baixo custo, alto benefício",
-    "Requer coordenação entre entidades",
+    "Requer coordenação entre entidades"
   ];
 
   let cardCount = 0;
 
   function gerarCard() {
-    // escolhe elementos pseudo-aleatórios
     const tag = tags[Math.floor(Math.random() * tags.length)];
     const titulo = titulos[Math.floor(Math.random() * titulos.length)];
     const desc = descricoes[Math.floor(Math.random() * descricoes.length)];
@@ -89,12 +88,15 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.appendChild(frag);
   }
 
-  // gera os primeiros 9
+  // primeiros 9 cards
   gerarLote(9);
 
+  // botão "Gerar mais cards"
   btnMore.addEventListener("click", () => {
     gerarLote(9);
-    // scroll suave para mostrar os novos cards
-    grid.lastElementChild.scrollIntoView({ behavior: "smooth", block: "end" });
+    grid.lastElementChild.scrollIntoView({
+      behavior: "smooth",
+      block: "end"
+    });
   });
 });
