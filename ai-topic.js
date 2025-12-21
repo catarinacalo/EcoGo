@@ -1,18 +1,15 @@
-// Geração de cards "automáticos"
-
+// Geração de cards automáticos iguais aos de cima
 document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.getElementById("ai-topics-grid");
+  const container = document.querySelector(".eco-topic-destaque");
   const btnMore = document.getElementById("btn-more-topics");
-
-  if (!grid || !btnMore) return;
+  if (!container || !btnMore) return;
 
   const tags = [
-    { label: "Transporte Público", icon: "🚌" },
-    { label: "Bicicleta", icon: "🚴" },
-    { label: "Cidades Inteligentes", icon: "🏙️" },
-    { label: "Carro Elétrico", icon: "⚡" },
-    { label: "Partilha", icon: "🤝" },
-    { label: "Planeamento", icon: "🧭" }
+    { label: "Custos do Automóvel", icon: "💰", pillClass: "pill-green" },
+    { label: "Bicicleta", icon: "🚴", pillClass: "pill-orange" },
+    { label: "Transporte Público", icon: "🚌", pillClass: "pill-blue" },
+    { label: "Partilha", icon: "🤝", pillClass: "pill-purple" },
+    { label: "Planeamento", icon: "🧭", pillClass: "pill-indigo" }
   ];
 
   const titulos = [
@@ -45,58 +42,95 @@ document.addEventListener("DOMContentLoaded", () => {
     "Evita deslocações desnecessárias e picos de tráfego nas horas de ponta."
   ];
 
-  const impactos = [
-    "Redução alta de CO₂",
-    "Impacto moderado",
-    "Mudança estrutural",
-    "Baixo custo, alto benefício",
-    "Requer coordenação entre entidades"
+  const extras = [
+    "Trocar deslocações até 3 km por bicicleta ou caminhada pode reduzir até 50% das emissões pessoais diárias.",
+    "Faixas BUS bem planeadas tornam o transporte público mais rápido que o carro em muitos percursos urbanos.",
+    "Zonas de baixas emissões combinadas com bom transporte público transformam centros urbanos em espaços mais saudáveis.",
+    "Parques periféricos com shuttle reduzem o número de carros a circular no centro, mantendo o acesso cómodo.",
+    "Ciclovias ligadas a estações incentivam o uso combinado bicicleta + comboio nas rotinas diárias.",
+    "Renovar frotas municipais com veículos elétricos reduz ruído, emissões e custos de combustível.",
+    "Plataformas de boleia entre colegas reduzem carros na estrada e dividem custos de deslocação.",
+    "Ruas pensadas para peões trazem mais comércio local, segurança e qualidade de vida.",
+    "Semáforos otimizados reduzem paragens, consumo de combustível e atrasos em horas de ponta.",
+    "Bilhética e tarifas integradas facilitam usar vários modos de transporte na mesma viagem.",
+    "Estacionamento seguro para bicicletas é essencial para quem deixa a bike na estação ou na escola.",
+    "Dias de teletrabalho bem planeados retiram carros da estrada e aliviam muito o trânsito."
   ];
 
-  let cardCount = 0;
+  const imagens = [
+    { src: "imagens/topico-co2.jpg", alt: "Aerogeradores ao pôr-do-sol" },
+    { src: "imagens/topico-cidade.jpg", alt: "Maquete de cidade inteligente" },
+    { src: "imagens/topico-ruido.jpg", alt: "Pessoa a atravessar rua com trânsito" },
+    { src: "imagens/topico-estacionamento.jpg", alt: "Sinal de estacionamento" },
+    { src: "imagens/topico-ciclovia.jpg", alt: "Sinal de ciclovia" },
+    { src: "imagens/topico-partilhado.jpg", alt: "Pessoa a usar mobilidade partilhada elétrica" }
+  ];
+
+  let cardCount = 3;
+
+  function ligarToggle(card) {
+    const btn = card.querySelector(".eco-topic-toggle");
+    const extra = card.querySelector(".eco-topic-extra");
+    if (!btn || !extra) return;
+
+    btn.addEventListener("click", () => {
+      const isActive = card.classList.toggle("ativo");
+      btn.firstChild.textContent = isActive ? "Ver menos " : "Ver mais ";
+    });
+  }
 
   function gerarCard() {
     const tag = tags[Math.floor(Math.random() * tags.length)];
     const titulo = titulos[Math.floor(Math.random() * titulos.length)];
     const desc = descricoes[Math.floor(Math.random() * descricoes.length)];
-    const impacto = impactos[Math.floor(Math.random() * impactos.length)];
+    const extra = extras[Math.floor(Math.random() * extras.length)];
+    const img = imagens[Math.floor(Math.random() * imagens.length)];
 
     cardCount += 1;
 
     const card = document.createElement("article");
-    card.className = "ai-topic-card";
+    card.className = "eco-topic-expandido";
+
     card.innerHTML = `
-      <div class="ai-topic-tag">
-        <span>${tag.icon}</span>
-        <span>${tag.label}</span>
+      <div class="eco-topic-banner quadrado">
+        <img src="${img.src}" alt="${img.alt}">
+        <div class="eco-topic-pill ${tag.pillClass}">
+          <span>${tag.icon}</span>
+        </div>
       </div>
-      <h3 class="ai-topic-title">${titulo}</h3>
-      <p class="ai-topic-desc">${desc}</p>
-      <div class="ai-topic-meta">
-        <span class="ai-topic-badge">${impacto}</span>
-        <span>Ação #${cardCount}</span>
+      <div class="eco-topic-main">
+        <h3>${titulo}</h3>
+        <p class="eco-topic-sub">${desc}</p>
+        <button class="eco-topic-toggle">
+          Ver mais <span>▼</span>
+        </button>
+      </div>
+      <div class="eco-topic-extra">
+        <p>${extra}</p>
+        <p><strong>Ação #${cardCount}</strong> • Inspirado nas melhores práticas de mobilidade sustentável.</p>
       </div>
     `;
+
+    ligarToggle(card);
     return card;
   }
+
+  // ligar toggle aos 3 cards que já existem no HTML
+  document
+    .querySelectorAll(".eco-topic-expandido")
+    .forEach(card => ligarToggle(card));
 
   function gerarLote(qtd) {
     const frag = document.createDocumentFragment();
     for (let i = 0; i < qtd; i++) {
       frag.appendChild(gerarCard());
     }
-    grid.appendChild(frag);
+    container.appendChild(frag);
   }
 
-  // primeiros 9 cards
-  gerarLote(9);
+  gerarLote(3);
 
-  // botão "Gerar mais cards"
   btnMore.addEventListener("click", () => {
-    gerarLote(9);
-    grid.lastElementChild.scrollIntoView({
-      behavior: "smooth",
-      block: "end"
-    });
+    gerarLote(3);
   });
 });
