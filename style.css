@@ -124,14 +124,25 @@ html, body {
 .rodape-baixo { border-top:1px solid #e2efe5; text-align:center; color:#227542; padding: 14px 0; background: #e8f7ed; font-size:1.07em;}
 .rodape-baixo p { margin:0; }
 
-.icon-rede {
-  width: 28px;   /* muda aqui o tamanho desejado */
-  height: 28px;
+.redes-icons {
+  display: flex;
+  align-items: center;   /* novo: centra os 3 ícones verticalmente */
+  gap: 13px;
+  margin-top: 8px;
 }
+
+.icon-rede {
+  width: 30px;           /* mesmo tamanho base para todos */
+  height: 30px;
+}
+
+/* em vez de scale grande, usa um ligeiro ajuste */
 .icon-twitter {
-  transform: scale(1.7);   /* aumenta ~20%, ajusta até ficar igual */
+  transform: scale(1.65) translateY(1.5px);
   transform-origin: center;
 }
+
+
 
 
 /* Geral */
