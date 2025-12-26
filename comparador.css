@@ -42,7 +42,7 @@ body { background:#f7fefb; }
 .co2-table tr:not(:last-child) { border-bottom: 1px solid #e3e3e3;}
 .co2-table td .dot { width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:13px;}
 
-.media-info {margin-top:18px;display:flex;justify-content:space-between;gap:30px;}
+.media-info {margin-top:18px; margin-bottom:18px; display:flex;justify-content:space-between;gap:30px;}
 .media-item {background:#eafaea;border-radius:11px;padding:12px 18px;flex:1;text-align:center;font-size:1.13em;font-weight:500;color:#189e5b;}
 
 .co2-legend-row {

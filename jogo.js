@@ -85,7 +85,7 @@ const questionPool = [
     explanation: "A mobilidade sustentável beneficia o ambiente, melhora a saúde pública e pode ser mais económica!",
   },
   {
-    question: "Quantos gramas de CO₂ por km emite aproximadamente um comboio elétrico?",
+    question: "Quantas gramas de CO₂ por km emite aproximadamente um comboio elétrico?",
     options: ["10g", "35g", "80g", "120g"],
     correct: 1,
     explanation: "Um comboio elétrico emite cerca de 35g de CO₂ por km.",
