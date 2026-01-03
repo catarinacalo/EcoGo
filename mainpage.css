@@ -25,9 +25,9 @@
 .eco-transp h2 {text-align:center; color:#158a5a; font-size:2em; margin-bottom:36px;}
 .eco-transp-grid {display:flex; gap:36px; max-width:990px; margin:0 auto 32px auto;}
 .eco-transp-card {background:#fff; border-radius:18px; box-shadow:0 2px 18px #e7f7ea;padding:28px 19px;text-align:center;flex:1;}
-.eco-transp-icon {font-size:20px;margin-bottom:3px;width: 100px; align: center; margin-left: auto; margin-right: auto; margin-bottom: 10px;}
-.eco-autocarro img {margin-bottom: 14px; margin-top: -15px;}
-.eco-carro img {width: 170px; height: 170px; margin-bottom: -13px; margin-top: -16px;}
+.eco-transp-icon {font-size:20px;margin-bottom:3px;width: 100px; box-align: center; margin-left: auto; margin-right: auto; margin-bottom: 10px;}
+.eco-autocarro img {margin-bottom: 14.5px; margin-top: -15px;}
+.eco-carro img {width: 170px; height: 170px; margin-bottom: -12.5px; margin-top: -16px;}
 .eco-transp-card h3 {font-size:1.15em;margin-bottom:9px;}
 .eco-imgs-row {display:flex;gap:24px;justify-content:center;margin-top:30px;}
 .eco-imgs-row img {border-radius:16px;max-width:320px;width:100%;}
