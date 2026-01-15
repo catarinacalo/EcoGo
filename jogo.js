@@ -244,15 +244,7 @@ function getScoreMessage(score, total) {
 }
 
 
-// 6. Geração de perguntas por IA (para integração futura via API)
-// Exemplo (pseudo-código):
-/*
-async function fetchQuizFromAI(){
-  const resp = await fetch('https://api.perguntasai.com/trivia?tema=sustentabilidade&n=10');
-  const quiz = await resp.json(); // Formato igual a questions
-  questions = quiz; // Chamar updateGame em seguida
-}
-*/
+
 
 
 function startGame() {
