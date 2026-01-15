@@ -179,7 +179,7 @@ function updateGame() {
       <div id="trivia-bottom-anchor"></div>
     </div>
     <div class="trivia-info">
-      Cada resposta correta vale <b>10 pontos</b>. Boa sorte! 🍀
+      Cada resposta correta vale <b>10 pontos</b>. Boa sorte! 
     </div>
   `;
 }

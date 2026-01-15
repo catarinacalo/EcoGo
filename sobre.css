@@ -55,7 +55,7 @@ body {
 .sobre-bloco-header h2 {
     font-size:1.5em;
     margin:0;
-    color:#0f172a;
+    color:#030406;
 }
 
 /* texto */
@@ -70,7 +70,7 @@ body {
 .sobre-bloco-equipa .sobre-texto-pequeno,
 .sobre-bloco-desenvolvemos p,
 .sobre-bloco-valores p {
-    color:#475569;
+    color:#047857;
 }
 
 .sobre-texto-pequeno {
@@ -89,13 +89,17 @@ body {
     font-size:1.6em;
 }
 
+
+
+
+
 /* cores específicas de ícones */
 .sobre-icone-projeto {
     background:#ffffff;
 }
 
 .sobre-icone-missao {
-    background:#e4f8e9;
+    background:#047857;
 }
 
 .sobre-icone-equipa {
@@ -130,7 +134,7 @@ body {
 .sobre-dev-item h4 {
     margin:0 0 6px 0;
     font-size:1.1em;
-    color:#0f172a;
+    color:#000000;
 }
 
 .sobre-dev-item p {
