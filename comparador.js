@@ -30,6 +30,7 @@ function atualizarImagensVeiculo(veicAtivo){
 }
 
 // Botões veículo
+<<<<<<< HEAD
 // Botões veículo
 document.querySelectorAll('.veic-btn').forEach(btn => {
     btn.onclick = () => {
@@ -41,6 +42,17 @@ document.querySelectorAll('.veic-btn').forEach(btn => {
 });
 
 
+=======
+document.querySelectorAll(".veic-btn").forEach(btn=>{
+  btn.onclick = ()=>{
+    const veic = btn.getAttribute("data-veic");
+    selectedVehicle = veic;
+    atualizarImagensVeiculo(veic);
+    renderTableChart();
+  };
+});
+
+>>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 const distSlider = document.getElementById("dist-slider");
 const distInput  = document.getElementById("dist-input");
 
