@@ -157,4 +157,37 @@ img { max-width:100%; }
   .menu-conteudo, .rodape-topo {flex-direction: column; align-items: center;}
   .rodape-links, .rodape-redes {align-items:center; margin-bottom:18px;}
 }
+@media (max-width: 480px) {
+  .menu-header {
+    padding: 12px 0;  /* Menos altura */
+  }
+  
+  .menu-conteudo {
+    padding: 0 16px;  /* Menos laterais */
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .menu-logo {
+    order: 1;  /* Logo primeiro */
+    flex: 1;
+  }
+  
+  .menu-nav {
+    order: 3;  /* Menu depois */
+    width: 100%;
+  }
+  
+  .menu-nav ul {
+    gap: 12px;  /* Espaçamento apertado */
+    justify-content: center;
+    font-size: 0.92em;  /* Fonte menor */
+    flex-wrap: wrap;
+  }
+  
+  .menu-nav a {
+    padding: 4px 8px;  /* Botões compactos */
+    font-weight: 600;
+  }
+}
 

@@ -30,14 +30,16 @@ function atualizarImagensVeiculo(veicAtivo){
 }
 
 // Botões veículo
-document.querySelectorAll(".veic-btn").forEach(btn=>{
-  btn.onclick = ()=>{
-    const veic = btn.getAttribute("data-veic");
-    selectedVehicle = veic;
-    atualizarImagensVeiculo(veic);
-    renderTableChart();
-  };
+// Botões veículo
+document.querySelectorAll('.veic-btn').forEach(btn => {
+    btn.onclick = () => {
+        const veic = btn.getAttribute('data-veic');
+        selectedVehicle = veic;
+        atualizarImagensVeiculo(veic);
+        renderTableChart();  // ← ADICIONA ESTA LINHA
+    }
 });
+
 
 const distSlider = document.getElementById("dist-slider");
 const distInput  = document.getElementById("dist-input");

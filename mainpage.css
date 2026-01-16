@@ -20,6 +20,32 @@
 .eco-beneficio-icon {font-size:2.7em;margin-bottom:18px;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto;}
 .eco-beneficio-card h3 {font-size:1.2em;margin-bottom:10px;}
 .eco-beneficio-card p {font-size:1.07em;color:#49744b;}
+/* Cards grandes IGUAIS */
+.eco-topic-destaque {
+  align-items: flex-start !important;  /* Alinha tops, sem stretch */
+}
+
+.ai-topics-grid {
+  align-items: flex-start !important;
+  grid-template-rows: auto !important;  /* Alturas independentes */
+}
+
+.eco-topic-expandido {
+  height: auto !important;  /* Remove height: 100% */
+}
+
+
+/* Separação visual entre grelhas */
+.ai-topics-section {
+  margin-top: 50px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 40px;
+}
+
+/* Cards AI uniformes */
+.ai-topic-card {
+  min-height: 140px;  /* Altura mínima fixa */
+}
 
 .eco-transp {background:#fafdff; padding:58px 0;}
 .eco-transp h2 {text-align:center; color:#158a5a; font-size:2em; margin-bottom:36px;}
@@ -261,6 +287,18 @@
   background:#15803d;
   transform:translateY(-1px);
   box-shadow:0 14px 30px rgba(22,163,74,0.4);
+}
+/* Cards AI IGUAIS aos grandes - ALTURA FIXA */
+.ai-topics-grid {
+  align-items: stretch !important;
+  grid-template-rows: 1fr !important; /* Força linhas iguais */
+}
+
+.ai-topic-card {
+  height: 100% !important;
+  min-height: 280px !important; /* Igual aos grandes */
+  display: flex !important;
+  flex-direction: column !important;
 }
 
 /* responsivo */
