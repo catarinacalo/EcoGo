@@ -157,7 +157,6 @@ img { max-width:100%; }
   .menu-conteudo, .rodape-topo {flex-direction: column; align-items: center;}
   .rodape-links, .rodape-redes {align-items:center; margin-bottom:18px;}
 }
-<<<<<<< HEAD
 @media (max-width: 480px) {
   .menu-header {
     padding: 12px 0;  /* Menos altura */
@@ -191,6 +190,4 @@ img { max-width:100%; }
     font-weight: 600;
   }
 }
-=======
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 
