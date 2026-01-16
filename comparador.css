@@ -1,7 +1,6 @@
 body { background:#f7fefb; }
 .co2-formbox,
 .co2-container-lg{
-<<<<<<< HEAD
   max-width:970px;
   margin:36px auto 0 auto;
   background:#fff;
@@ -10,17 +9,6 @@ body { background:#f7fefb; }
   padding:42px 38px 38px 38px;
 }
 
-=======
-  max-width:970px;                 /* mesma largura */
-  margin:36px auto 0 auto;         /* mesma margem */
-  background:#fff;
-  border-radius:20px;
-  box-shadow:0 2px 16px #e7f7ea;   /* mesma sombra */
-  padding:42px 38px 38px 38px;     /* mesmo padding */
-}
-
-/* se quiseres um pouco mais de espaço entre as duas caixas */
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 .co2-formbox{ margin-top:40px; }
 .co2-container-lg{ margin-top:36px; }
 #co2-chartbox {width:100%; margin:0 auto;}
@@ -47,7 +35,6 @@ body { background:#f7fefb; }
 #dist-slider {flex:1; height:15px; accent-color:#189e5b;}
 #dist-input {width:80px; padding:11px 12px;font-size: 1.25em;font-weight:bold; text-align:center; border:2px solid #aee6be; border-radius:9px;}
 
-<<<<<<< HEAD
 .co2-table { 
   width:100%; 
   background:#fff; 
@@ -66,13 +53,6 @@ body { background:#f7fefb; }
   display:inline-block; 
   margin-right:13px;
 }
-=======
-.co2-table { width:100%; background:#fff; border-radius:18px; box-shadow:0 2px 18px #e7f7ea; border-collapse: collapse; font-size:1.12em;}
-.co2-table th, .co2-table td { padding:18px 14px; text-align:left;}
-.co2-table th { color:#158a5a; background:#e8f7ec; font-weight:600;}
-.co2-table tr:not(:last-child) { border-bottom: 1px solid #e3e3e3;}
-.co2-table td .dot { width:18px; height:18px; border-radius:50%; display:inline-block; margin-right:13px;}
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 
 .media-info {margin-top:18px; margin-bottom:18px; display:flex;justify-content:space-between;gap:30px;}
 .media-item {background:#eafaea;border-radius:11px;padding:12px 18px;flex:1;text-align:center;font-size:1.13em;font-weight:500;color:#189e5b;}
@@ -86,29 +66,18 @@ body { background:#f7fefb; }
 .comp-tips-card h2 {margin-bottom:15px;}
 .comp-tips-card a.tips-link {margin-top:18px;display:inline-block;background:white;color:#28be62;padding:14px 44px;border-radius:14px;font-weight:700;font-size:1.14em;text-decoration:none;transition:.19s;}
 .comp-tips-card a.tips-link:hover {background:#eafaea;}
-<<<<<<< HEAD
 
-=======
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 .veic-icone{
   width:252px;
   height:252px;
   object-fit:contain;
 }
 
-<<<<<<< HEAD
-=======
-/* ajustar o botão para não crescer infinito */
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 .veic-btn{
   background:#f7fefb;
   border:2.5px solid #d3eed8;
   border-radius:18px;
-<<<<<<< HEAD
   padding:16px 32px 12px 32px;
-=======
-  padding:16px 32px 12px 32px;  /* pouco padding vertical */
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
   text-align:center;
   font-size:1.26em;
   color:#4b5563;
@@ -117,7 +86,6 @@ body { background:#f7fefb; }
   outline:none;
   display:flex;
   flex-direction:column;
-<<<<<<< HEAD
   gap:8px;
   align-items:center;
   min-width:160px;
@@ -174,21 +142,4 @@ body { background:#f7fefb; }
     height: 12px;
     margin-right: 4px;
   }
-=======
-  gap:8px;                      /* pouco espaço entre ícone e texto */
-  align-items:center;
-  min-width:160px;
-  max-height:320px;             /* ajusta se precisares de mais/menos */
-}
-
-
-
-@media (max-width:1000px){
-  .co2-container-lg, .comp-tips-card {padding:16px;}
-}
-@media (max-width:900px){
-  .veic-btn-list {gap:16px;}
-  .veic-btn {padding:30px 14px 18px 14px;}
-  #dist-input {max-width:60px;}
->>>>>>> eca352724c5a5cb0248eb0e49b3b65ce58b92299
 }
