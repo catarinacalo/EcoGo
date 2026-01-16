@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>EcoGo – Soluções Personalizadas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="solucoes.css">
+</head>
+<body>
+<header class="menu-header">
+  <div class="menu-conteudo">
+    <div class="menu-logo">
+      <a href="main.html">
+        <img src="imagens/LogoFinal.svg" alt="EcoGo" class="logo-img">
+      </a>
+    </div>
+    <nav class="menu-nav">
+      <ul>
+        <li><a href="comparador.html">Comparador</a></li>
+        <li><a href="jogo.html">Quiz</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="solutions-main">
+  <!-- HERO / CALCULADORA -->
+  <section class="solutions-hero">
+    <h1>Soluções Personalizadas</h1>
+    <p class="solutions-intro">
+      Descubra ações práticas baseadas nos seus hábitos de deslocação
+    </p>
+
+    <div class="solutions-calculator">
+      <div class="solutions-calc-grid">
+        <div class="solutions-input-group">
+          <label for="distancia">Distância diária percorrida (km)</label>
+          <input id="distancia" type="number" value="5" min="1" max="500">
+        </div>
+
+        <div class="solutions-input-group">
+          <label for="tipo-veiculo">Tipo de veículo atual</label>
+          <select id="tipo-veiculo">
+            <option value="carro">Carro</option>
+            <option value="autocarro">Autocarro</option>
+            <option value="comboio">Comboio</option>
+          </select>
+        </div>
+
+        <div class="solutions-input-group">
+          <label for="combustivel">Tipo de combustível</label>
+          <select id="combustivel">
+            <option value="gasolina">Gasolina</option>
+            <option value="diesel">Diesel</option>
+            <option value="eletrico">Elétrico</option>
+            <option value="hibrido">Híbrido</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="solutions-results">
+        <div class="solutions-result-card">
+          <p class="solutions-result-label">
+            Transporte atual: <span id="label-veiculo">Carro a Gasolina</span>
+          </p>
+          <div class="solutions-result-row">
+            <div class="solutions-result-box">
+              <span class="solutions-result-title">Emissões Diárias</span>
+              <span class="solutions-result-value" id="emissoes-diarias">0.60 kg CO₂</span>
+            </div>
+            <div class="solutions-result-box">
+              <span class="solutions-result-title">Emissões Anuais</span>
+              <span class="solutions-result-value" id="emissoes-anuais">0.2 ton CO₂</span>
+              <span class="solutions-result-sub" id="emissoes-anuais-kg">219 kg/ano</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÕES PERSONALIZADAS -->
+  <section class="solutions-section">
+    <div class="solutions-container">
+      <h2 class="solutions-section-title">As suas soluções personalizadas</h2>
+      <p class="solutions-section-sub" id="texto-intro-solucoes">
+        Com base nos seus 5 km diários usando carro a gasolina, aqui estão ações específicas que pode tomar:
+      </p>
+
+      <div class="solutions-grid">
+        <!-- Árvores -->
+        <article class="solution-card green-card">
+          <div class="solution-card-header">
+            <div class="solution-icon green-circle"></div>
+            <h3>Compensação por Árvores</h3>
+          </div>
+          <p class="solution-card-text">
+            Para compensar as suas emissões anuais, seria necessário plantar:
+          </p>
+          <div class="solution-big-number" id="num-arvores">11</div>
+          <p class="solution-card-sub">árvores por ano</p>
+        </article>
+
+        <!-- Bicicleta -->
+        <article class="solution-card blue-card">
+          <div class="solution-card-header">
+            <div class="solution-icon blue-circle"></div>
+            <h3>Alternativa: Bicicleta</h3>
+          </div>
+          <p class="solution-card-text" id="texto-bicicleta">
+            Se fizesse 5 km de bicicleta em vez de carro a gasolina:
+          </p>
+          <div class="solution-big-number blue-text">100%</div>
+          <p class="solution-card-sub">redução de emissões</p>
+          <p class="solution-card-mini">+ benefícios para a saúde!</p>
+        </article>
+
+        <!-- Carro elétrico -->
+        <article class="solution-card purple-card">
+          <div class="solution-card-header">
+            <div class="solution-icon purple-circle"></div>
+            <h3>Carro Elétrico</h3>
+          </div>
+          <p class="solution-card-text">
+            Mudando para um veículo elétrico:
+          </p>
+          <div class="solution-big-number purple-text" id="percent-eletrico">58%</div>
+          <p class="solution-card-sub">redução de emissões</p>
+          <p class="solution-card-mini" id="kg-eletrico">128 kg CO₂ poupados/ano</p>
+        </article>
+
+        <!-- Transporte público -->
+        <article class="solution-card orange-card">
+          <div class="solution-card-header">
+            <div class="solution-icon orange-circle"></div>
+            <h3>Transporte Público</h3>
+          </div>
+          <p class="solution-card-text" id="texto-publico">
+            Usando transporte público (comboio ou autocarro):
+          </p>
+          <div class="solution-big-number orange-text" id="percent-publico">71%</div>
+          <p class="solution-card-sub">redução de emissões</p>
+          <p class="solution-card-mini" id="kg-publico">155 kg CO₂ poupados/ano</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- POUPANÇA FINANCEIRA -->
+  <section class="solutions-section">
+    <div class="solutions-container">
+      <h2 class="solutions-section-title">Poupança Financeira</h2>
+
+      <div class="solutions-savings-grid">
+        <div class="solutions-saving-card">
+          <p class="solutions-saving-label">Poupança diária com bicicleta</p>
+          <p class="solutions-saving-value" id="poupanca-diaria">€0.75</p>
+        </div>
+        <div class="solutions-saving-card">
+          <p class="solutions-saving-label">Poupança mensal</p>
+          <p class="solutions-saving-value" id="poupanca-mensal">€22.50</p>
+        </div>
+        <div class="solutions-saving-card">
+          <p class="solutions-saving-label">Poupança anual</p>
+          <p class="solutions-saving-value" id="poupanca-anual">€273.75</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DICAS PRÁTICAS -->
+  <section class="solutions-section">
+    <div class="solutions-container">
+      <h2 class="solutions-section-title">Dicas Práticas para Reduzir Emissões</h2>
+
+      <div class="solutions-tips">
+        <article class="solutions-tip-card tip-green">
+          <div class="solutions-tip-bar"></div>
+          <div class="solutions-tip-content">
+            <h3>Use Bicicleta para Distâncias Curtas</h3>
+            <p id="texto-dica-bici">
+              Para os seus 5 km diários, considere usar bicicleta. Além de zero emissões,
+              melhora a sua saúde cardiovascular e poupa dinheiro.
+            </p>
+          </div>
+        </article>
+
+        <article class="solutions-tip-card tip-blue">
+          <div class="solutions-tip-bar"></div>
+          <div class="solutions-tip-content">
+            <h3>Partilhe Viagens</h3>
+            <p>
+              Partilhar o carro com 3 colegas reduz as emissões per capita em 75%. Organize boleia
+              com vizinhos ou colegas de trabalho.
+            </p>
+          </div>
+        </article>
+
+        <article class="solutions-tip-card tip-orange">
+          <div class="solutions-tip-bar"></div>
+          <div class="solutions-tip-content">
+            <h3>Transporte Público</h3>
+            <p id="texto-dica-publico">
+              Um comboio elétrico emite apenas 35g CO₂/km, comparado aos 120g do seu veículo atual.
+              Experimente o transporte público!
+            </p>
+          </div>
+        </article>
+
+        <article class="solutions-tip-card tip-yellow">
+          <div class="solutions-tip-bar"></div>
+          <div class="solutions-tip-content">
+            <h3>Considere Veículos Elétricos</h3>
+            <p id="texto-dica-eletrico">
+              Na próxima compra de veículo, considere elétricos. Com as suas deslocações,
+              pouparia cerca de 0.1 toneladas de CO₂ por ano.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="solutions-cta">
+    <div class="solutions-cta-inner">
+      <h2>Cada Ação Conta!</h2>
+      <p>
+        Implementar mesmo uma destas soluções faz diferença. Comece hoje e seja parte da mudança!
+      </p>
+      <div class="solutions-cta-buttons">
+        <a href="comparador.html" class="btn-white">Ver Comparador</a>
+        <a href="jogo.html" class="btn-dark">Testar Conhecimentos</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+    <div class="rodape-topo">
+      <div class="rodape-logo">
+        <img src="imagens/LogoFinal.svg" alt="EcoGo" class="logo-img">
+      </div>
+      <div class="rodape-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a class="ativo" href="main.html">Início</a></li>
+          <li><a href="comparador.html">Comparador</a></li>
+          <li><a href="jogo.html">Quiz</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="sobre.html">Sobre Nós</a></li>
+        </ul>
+      </div>
+      <div class="rodape-redes">
+  <h3>Redes Sociais</h3>
+  <div class="redes-icons">
+    <a href="https://web.facebook.com/profile.php?id=61584868052966" aria-label="Facebook">
+      <img src="imagens/Facebook.svg" alt="Facebook" class="icon-rede">
+    </a>
+    <a href="https://x.com/EcoGo1809" aria-label="Twitter">
+      <img src="imagens/Twitter.svg" alt="Twitter" class="icon-rede icon-twitter">
+    </a>
+    <a href="https://www.instagram.com/ecogo1809/" aria-label="Instagram">
+      <img src="imagens/Instagram.svg" alt="Instagram" class="icon-rede">
+    </a>
+  </div>
+</div>
+
+    </div>
+    <div class="rodape-baixo">
+      <p>&copy; 2025 eco go. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+<!-- JS que atualiza todos os resultados conforme distância / tipo / combustível -->
+<script src="solucoes.js"></script>
+</body>
+</html>

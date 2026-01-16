@@ -1,0 +1,20 @@
+body { background: #f4fff7; }
+.trivia-container { max-width: 600px; margin: 48px auto 0 auto; padding: 0 16px; }
+.trivia-card { background: #fff; border-radius: 18px; box-shadow: 0 2px 18px #e7f7ea; margin-bottom: 36px; padding: 32px 32px 24px 32px; }
+.trivia-score-bar { display: flex; align-items: center; justify-content: space-between; gap: 5px; margin-bottom: 8px; }
+.trivia-bar-bg { background: #e7e7e7; border-radius: 6px; height: 7px; margin-top: 12px; }
+.trivia-bar-fill { background: #68c978; height: 7px; border-radius: 6px; transition: width .4s; }
+.trivia-options button { width: 100%; text-align: left; padding: 16px; border-radius: 10px; margin-top: 13px; font-size: 1.12em; cursor: pointer; border: 2px solid #e4efe8; background: #fafaf9; transition: background .25s, border-color .25s; }
+.trivia-options button:hover:not([disabled]) { border-color: #68c978; background: #eafaea; }
+.trivia-options button.correct { border-color: #49b363; background: #eafaea; color: #218c3a; }
+.trivia-options button.wrong { border-color: #f34848; background: #fceaea; color: #aa2222; }
+.trivia-options button:not(.correct):not(.wrong)[disabled] { opacity: .47; }
+.trivia-info { margin: 32px 0; background: #e8f2fa; border: 1.6px solid #b9dcdd; border-radius: 12px; padding: 20px; text-align: center; font-size: 1.10em; color: #277088; }
+.trivia-explanation { margin: 28px 0 12px 0; border-radius: 12px; padding: 20px; font-size: 1.09em; border: 1.8px solid; }
+.trivia-explanation.correct { background: #eafaea; border-color: #78c87c; color: #218c3a; }
+.trivia-explanation.wrong { background: #fceaea; border-color: #eb8686; color: #a03d3d; }
+.trivia-end { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px #e7f7ea; margin-top: 40px; padding: 40px 24px; text-align: center; }
+.trivia-end .trivia-pontos-final { padding: 18px; border-radius: 8px; background: #eafaea; color: #218c3a; font-size: 2.2em; font-weight: bold; margin-bottom: 18px; display: inline-block; }
+.trivia-end .trivia-msg { margin-bottom: 10px; font-size: 1.18em; color: #474e4a; }
+.trivia-bar-label { color: #333; font-size: 1.15em; }
+@media(max-width:700px) { .trivia-container, .trivia-card {padding: 18px;} .trivia-end{padding: 20px 8px;} }

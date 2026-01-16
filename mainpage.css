@@ -1,0 +1,283 @@
+.hero-eco {background: linear-gradient(90deg,#18af57 0%,#079645 100%); color:#fff; text-align:center; padding:100px 0 70px 0;}
+.hero-center {max-width:700px; margin:0 auto;}
+.hero-logo {width:85px; margin-bottom:25px;}
+.hero-eco h1 {font-size:2.8em; font-weight:700; margin-bottom:12px;}
+.hero-eco p {font-size:1.22em; margin-bottom:32px; color:#caffe1;}
+.hero-btn {background:#fff; color:#189e5b; padding:16px 40px; font-size:1.15em; border-radius:28px; text-decoration:none; font-weight:700; transition:.18s;}
+.hero-btn:hover {background:#d7ffec;}
+
+.mob-sus {background:#f6fff7; padding:60px 0;}
+.mob-sus-content {display:flex;gap:50px;max-width:1100px;margin:0 auto;align-items:center;}
+.mob-sus-content > div {flex:1;}
+.mob-sus h2 {font-size:2em;color:#188a4a;margin-bottom:13px;}
+.mob-sus p {font-size:1.14em;}
+.mob-img {border-radius:20px;max-width:440px;width:100%;}
+
+.eco-beneficios {background:#fff; padding:55px 0;}
+.eco-beneficios h2 {text-align:center; color:#158a5a; margin-bottom:38px;font-size:2em;}
+.eco-beneficios-grid {display:flex; gap:36px; max-width:1050px; margin:0 auto;}
+.eco-beneficio-card {background:#f7f7fd; border-radius:18px; box-shadow:0 2px 20px #e7f7ea;padding:32px 22px;text-align:center;flex:1;}
+.eco-beneficio-icon {font-size:2.7em;margin-bottom:18px;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto;}
+.eco-beneficio-card h3 {font-size:1.2em;margin-bottom:10px;}
+.eco-beneficio-card p {font-size:1.07em;color:#49744b;}
+
+.eco-transp {background:#fafdff; padding:58px 0;}
+.eco-transp h2 {text-align:center; color:#158a5a; font-size:2em; margin-bottom:36px;}
+.eco-transp-grid {display:flex; gap:36px; max-width:990px; margin:0 auto 32px auto;}
+.eco-transp-card {background:#fff; border-radius:18px; box-shadow:0 2px 18px #e7f7ea;padding:28px 19px;text-align:center;flex:1;}
+.eco-transp-icon {font-size:20px;margin-bottom:3px;width: 100px; box-align: center; margin-left: auto; margin-right: auto; margin-bottom: 10px;}
+.eco-autocarro img {margin-bottom: 14.5px; margin-top: -15px;}
+.eco-carro img {width: 170px; height: 170px; margin-bottom: -12.5px; margin-top: -16px;}
+.eco-transp-card h3 {font-size:1.15em;margin-bottom:9px;}
+.eco-imgs-row {display:flex;gap:24px;justify-content:center;margin-top:30px;}
+.eco-imgs-row img {border-radius:16px;max-width:320px;width:100%;}
+
+.eco-cta {background:linear-gradient(90deg,#18af57 0%,#079645 100%);color:#fff;text-align:center;padding:80px 0;}
+.eco-cta h2 {font-size:2em;font-weight:700;margin-bottom:13px;}
+.eco-cta-btn {margin-top:22px;display:inline-block;background:white;color:#28be62;padding:17px 50px;border-radius:22px;font-weight:700;font-size:1.22em;text-decoration:none;transition:.19s;}
+.eco-cta-btn:hover {background:#d7ffec;}
+
+/* Cards grandes “Ver mais / Ver menos” */
+.eco-topic-destaque {
+  max-width:1200px;
+  margin:40px auto 70px auto;
+  padding:0 16px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+}
+
+.eco-topic-expandido {
+  background:#ffffff;
+  border-radius:24px;
+  box-shadow:0 12px 30px rgba(148,163,184,0.3);
+  overflow:hidden;
+  border:1px solid #e5e7eb;
+  display:flex;
+  flex-direction:column;
+}
+
+/* imagem quadrada 1:1 */
+.eco-topic-banner.quadrado {
+  position:relative;
+  width:100%;
+  padding-top:100%;
+  overflow:hidden;
+}
+
+.eco-topic-banner.quadrado img {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* ícone circular */
+.eco-topic-pill {
+  position:absolute;
+  top:12px;
+  left:12px;
+  width:52px;
+  height:52px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.6rem;
+  color:#ffffff;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.pill-green { background:#16a34a; }
+.pill-blue { background:#2563eb; }
+.pill-purple { background:#7c3aed; }
+.pill-orange { background:#f97316; }
+.pill-indigo { background:#4f46e5; }
+
+/* texto curto do card */
+.eco-topic-main {
+  padding:16px 18px 12px 18px;
+  background:#ffffff;
+  flex:0 0 auto;
+  min-height:110px;
+  box-sizing:border-box;
+}
+
+.eco-topic-main-manual {
+  background:#eef5ff;
+}
+
+.eco-topic-main h3 {
+  margin:0 0 6px 0;
+  font-size:1.05rem;
+  color:#1f2937;
+}
+
+.eco-topic-sub {
+  margin:0 0 10px 0;
+  color:#4b5563;
+  font-size:0.9rem;
+}
+
+.eco-topic-toggle {
+  border:none;
+  background:none;
+  padding:0;
+  cursor:pointer;
+  font-size:0.9rem;
+  font-weight:600;
+  color:#2563eb;
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+
+.eco-topic-toggle span {
+  font-size:0.8rem;
+}
+
+/* bloco escondido por defeito */
+.eco-topic-extra {
+  padding:12px 18px 16px 18px;
+  border-top:1px solid #e5e7eb;
+  background:#ffffff;
+  color:#111827;
+  font-size:0.9rem;
+  line-height:1.55;
+  display:none;
+}
+
+.eco-topic-extra p { margin:0 0 10px 0; }
+.eco-topic-extra p:last-child { margin-bottom:0; }
+
+/* estado aberto */
+.eco-topic-expandido.ativo .eco-topic-extra { display:block; }
+.eco-topic-expandido.ativo .eco-topic-toggle span { transform:rotate(180deg); }
+
+/* Grelha de cards "AI" */
+.ai-topics-section {
+  max-width:1200px;
+  margin:50px auto 80px auto;
+  padding:0 16px;
+}
+
+.ai-topics-header h2 {
+  margin:0 0 6px 0;
+  font-size:1.8rem;
+  color:#111827;
+}
+
+.ai-topics-header p {
+  margin:0 0 22px 0;
+  color:#4b5563;
+  font-size:0.96rem;
+}
+
+.ai-topics-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+
+.ai-topic-card {
+  background:#ffffff;
+  border-radius:20px;
+  box-shadow:0 10px 26px rgba(148,163,184,0.25);
+  padding:16px 16px 18px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  border:1px solid #e5e7eb;
+}
+
+.ai-topic-tag {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:0.83rem;
+  font-weight:600;
+  padding:4px 10px;
+  border-radius:999px;
+  background:#ecfdf5;
+  color:#16a34a;
+  width:max-content;
+}
+
+.ai-topic-tag span { font-size:1rem; }
+
+.ai-topic-title {
+  font-size:1rem;
+  font-weight:600;
+  color:#111827;
+  margin:0;
+}
+
+.ai-topic-desc {
+  font-size:0.9rem;
+  color:#4b5563;
+  margin:0;
+}
+
+.ai-topic-meta {
+  margin-top:auto;
+  font-size:0.8rem;
+  color:#6b7280;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+}
+
+.ai-topic-badge {
+  padding:4px 8px;
+  border-radius:999px;
+  font-size:0.78rem;
+  font-weight:600;
+  background:#eff6ff;
+  color:#1d4ed8;
+}
+
+.ai-topics-more-wrap {
+  text-align:center;
+  margin-top:26px;
+}
+
+.ai-topics-more-btn {
+  padding:11px 26px;
+  border-radius:999px;
+  border:none;
+  background:#16a34a;
+  color:#ffffff;
+  font-weight:600;
+  font-size:0.96rem;
+  cursor:pointer;
+  box-shadow:0 10px 24px rgba(34,197,94,0.35);
+  transition:.15s transform, .15s box-shadow, .15s background;
+}
+
+.ai-topics-more-btn:hover {
+  background:#15803d;
+  transform:translateY(-1px);
+  box-shadow:0 14px 30px rgba(22,163,74,0.4);
+}
+
+/* responsivo */
+@media (max-width:1000px){
+  .mob-sus-content,
+  .eco-beneficios-grid,
+  .eco-transp-grid {flex-direction:column;gap:18px;}
+  .eco-imgs-row {flex-direction:column;gap:14px;}
+  .eco-topic-destaque,
+  .ai-topics-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+
+@media (max-width:800px){
+  .eco-topic-banner img {height:180px;}
+}
+
+@media (max-width:650px){
+  .eco-topic-destaque,
+  .ai-topics-grid {grid-template-columns:1fr;}
+}
