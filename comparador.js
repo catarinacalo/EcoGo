@@ -30,13 +30,12 @@ function atualizarImagensVeiculo(veicAtivo){
 }
 
 // Botões veículo
-// Botões veículo
 document.querySelectorAll('.veic-btn').forEach(btn => {
     btn.onclick = () => {
         const veic = btn.getAttribute('data-veic');
         selectedVehicle = veic;
         atualizarImagensVeiculo(veic);
-        renderTableChart();  // ← ADICIONA ESTA LINHA
+        renderTableChart();  //refaz o gráfico, a legenda e a tabela
     }
 });
 
@@ -59,7 +58,7 @@ function renderTableChart() {
 
   const ctx = document.getElementById('co2-chart').getContext('2d');
   if(window.co2ChartObj){ window.co2ChartObj.destroy(); }
-  window.co2ChartObj = new Chart(ctx, {
+  window.co2ChartObj = new Chart(ctx, {  // biblioteca chart.js
     type: 'bar',
     data: {
       labels: fuels.map(f=>fuelConfig[f].label),
