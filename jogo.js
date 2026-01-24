@@ -100,7 +100,7 @@ const questionPool = [
 
 
 // 2. Função shuffle que devolve novo array (Fischer-Yates)
-function shuffle(arr) {
+function shuffle(arr) { // troca a oredem das pergyuntas
   const temp = [...arr];
   for (let i = temp.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -249,7 +249,7 @@ function getScoreMessage(score, total) {
 
 function startGame() {
   // Embaralha pool e seleciona 10 diferentes
-  questions = shuffle(questionPool).slice(0, 10);
+  questions = shuffle(questionPool).slice(0, 10); 
   current = 0;
   score = 0;
   answered = false;
