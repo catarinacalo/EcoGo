@@ -13,7 +13,7 @@ body {
   width: 100%;
   background: #f6f6f6;
   padding: 24px 0;
-  z-index: 100;
+  z-index: 100; /* o menu fica por cima do resto */
   box-sizing: border-box;
   border-bottom: 1px solid #eee;
 }
@@ -21,16 +21,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1300px;
+  max-width: 1300px; /* largura máxima do conteúdo do menu */
   margin: 0 auto;
   padding: 0 32px;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 .menu-logo .logo-img,
 .rodape-logo .logo-img {
   height: 40px;
   padding: 0;
-  display: block;
+  display: block; /* evita espaçamento extra */
 }
 
 .menu-nav ul {
@@ -64,7 +64,7 @@ body {
 }
 
 html, body {
-  overflow-x: hidden;
+  overflow-x: hidden; /* evita scroll horizontal */
   width: 100%;
   max-width: 100vw;
 }
