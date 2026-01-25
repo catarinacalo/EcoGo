@@ -30,9 +30,6 @@ body {
 .rodape-logo .logo-img {
   height: 40px;
   padding: 0;
-  /* Se quiseres dar espaço extra em baixo só ao rodapé:
-  margin-bottom: 6px;
-  */
   display: block;
 }
 
@@ -110,7 +107,7 @@ html, body {
 
 .rodape-links h3,
 .rodape-redes h3 {
-  margin-top: 0;      /* já tens no h3 dos links, garante igual nas redes */
+  margin-top: 0;      /* já no h3 dos links, garante igual nas redes */
 }
 
 
